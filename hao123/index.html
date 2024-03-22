@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text1</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <img class="hao" src="./static/10001.png"/>
+            <div class="right">
+                <div>
+                    <p>深圳</p>
+                    <p>未来七天</p>
+                </div>
+                <img class="clound" src="./static/10012.png"/>
+                <p class="du">20°</p>
+            </div>
+          
+        </div>
+        <div class="row2">
+            <p>搜你想搜的</p>
+            <div class="right">
+                <img src="./static/10016.png"/>
+                <div>
+                    百度一下
+                </div>
+            </div>
+        </div>
+        <div class="row3">
+            <div>
+                杜海涛爆改
+            </div>
+            <div>
+                韩版凯特门
+            </div>
+            <div>
+                鲜芋仙致歉声明
+            </div>
+        </div>
+        
+        
+    </div>
+    <div id="content">
+        ok
+     </div>
+    <script>
+        var content=document.getElementById('content')
+        let lists=[{path:'./static/10019.png',content:'百度'}
+        ,{path:'./static/10020.png',content:'凤凰'}
+        ,{path:'./static/10021.png',content:'腾讯'}
+        ,{path:'./static/10022.png',content:'搜狐'}
+        ,{path:'./static/10023.png',content:'新浪'}
+        ,{path:'./static/10024.png',content:'网易'}
+        ,{path:'./static/10020.png',content:'凤凰'}
+        ,{path:'./static/10021.png',content:'腾讯'}
+        ,{path:'./static/10022.png',content:'搜狐'}
+        ,{path:'./static/10023.png',content:'新浪'}
+        ,{path:'./static/10024.png',content:'网易'}
+        ]
+        var contentStr=''
+        lists.forEach(e=>{
+            contentStr+=`
+            <div class='container2 style=" width: 60px;
+            height: 60px;
+            background-color: aqua;"'>
+                <img src="${e.path}"/>
+                <p>${e.content}</p>
+            </div>
+            `
+        })
+        content.innerHTML=contentStr
+
+    </script>
+
+    
+</body>
+</html>
